@@ -1,5 +1,5 @@
 # 0xff
-The [2048](http://gabrielecirulli.github.io/2048/) clone for hackers!
+The [2048](http://gabrielecirulli.github.io/2048/) clone for hackers! It is easier than 2048.
 
 2048 is a small clone of [1024](https://play.google.com/store/apps/details?id=com.veewo.a1024), based on [Saming's 2048](http://saming.fr/p/2048/) (also a clone).
 
@@ -16,15 +16,13 @@ Many thanks to [rayhaanj](https://github.com/rayhaanj), [Mechazawa](https://gith
 
 [![Screenshot](https://i.cloudup.com/hwasYfHBxC.png)](https://i.cloudup.com/hwasYfHBxC.png)
 
-That screenshot is fake, by the way. I never reached 2048 :smile:
-
 ## Contributing
 Changes and improvements are more than welcome! Feel free to fork and open a pull request. Please make your changes in a specific branch and request to pull into `master`! If you can, please make sure the game fully works before sending the PR, as that will help speed up the process.
 
 You can find the same information in the [contributing guide.](https://github.com/gabrielecirulli/2048/blob/master/CONTRIBUTING.md)
 
 ## License
-2048 is licensed under the [MIT license.](https://github.com/gabrielecirulli/2048/blob/master/LICENSE.txt)
+0xff is licensed under the [MIT license.](https://github.com/gabrielecirulli/2048/blob/master/LICENSE.txt)
 
 ## Donations
 Send donations to Gabriele's BTC address: `1Ec6onfsQmoP9kkL3zkpB6c5sA4PVcXU2i`. Thank you very much!
