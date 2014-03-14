@@ -43,8 +43,8 @@ GameManager.prototype.addStartTiles = function () {
 // Adds a tile in a random position
 GameManager.prototype.addRandomTile = function () {
   if (this.grid.cellsAvailable()) {
-    var value = Math.random() < 0.9 ? 2 : 4;
-    var tile = new Tile(this.grid.randomAvailableCell(), value);
+    var value = Math.random() < 0.5 ? 0 : 1;
+    var tile = new Tile(this.grid.randomAvailableCell(), value, value === 0 ? 2 : 4);
 
     this.grid.insertTile(tile);
   }
@@ -107,23 +107,30 @@ GameManager.prototype.move = function (direction) {
       if (tile) {
         var positions = self.findFarthestPosition(cell, vector);
         var next      = self.grid.cellContent(positions.next);
-
+        var val;
         // Only one merger per row traversal?
-        if (next && next.value === tile.value && !next.mergedFrom) {
-          var merged = new Tile(positions.next, tile.value * 2);
+        if (next && next.value === tile.value && !next.mergedFrom) {          
+          if (tile.value === 0) {
+            val = 5 * 15; // adjusted for easier gameplay
+          } else if (tile.value > 1) {
+            val = tile.value + 30;
+          } else {
+            val = 7 * 15; // adjusted for easier gameplay
+          }
+          var merged = new Tile(positions.next, val, tile.clazz * 2);
           merged.mergedFrom = [tile, next];
-
+          
           self.grid.insertTile(merged);
           self.grid.removeTile(tile);
 
           // Converge the two tiles' positions
           tile.updatePosition(positions.next);
-
+          
           // Update the score
           self.score += merged.value;
-
-          // The mighty 2048 tile
-          if (merged.value === 2048) self.won = true;
+          
+          // The mighty 0xff tile
+          if (merged.value === 255) self.won = true;
         } else {
           self.moveTile(tile, positions.farthest);
         }

@@ -1,7 +1,8 @@
-function Tile(position, value) {
+function Tile(position, value, clazz) {
   this.x                = position.x;
   this.y                = position.y;
-  this.value            = value || 2;
+  this.value            = value || 0;
+  this.clazz            = clazz || 2; // separates class from value
 
   this.previousPosition = null;
   this.mergedFrom       = null; // Tracks tiles that merged together

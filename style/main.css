@@ -1,10 +1,10 @@
-@import url(fonts/clear-sans.css);
+@import url(http://fonts.googleapis.com/css?family=Share+Tech+Mono);
 html, body {
   margin: 0;
   padding: 0;
-  background: #faf8ef;
-  color: #776e65;
-  font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+  background: #1d1d1d;
+  color: #42AF2F;
+  font-family: "Share Tech Mono", sans-serif;
   font-size: 18px; }
 
 body {
@@ -56,14 +56,14 @@ h1.title {
 .score-container, .best-container {
   position: relative;
   display: inline-block;
-  background: #bbada0;
+  background: black;
   padding: 15px 25px;
   font-size: 25px;
   height: 25px;
   line-height: 47px;
   font-weight: bold;
   border-radius: 3px;
-  color: white;
+  color: inherit;
   margin-top: 8px;
   text-align: center; }
   .score-container:after, .best-container:after {
@@ -74,8 +74,7 @@ h1.title {
     text-transform: uppercase;
     font-size: 13px;
     line-height: 13px;
-    text-align: center;
-    color: #eee4da; }
+    text-align: center; }
   .score-container .score-addition, .best-container .score-addition {
     position: absolute;
     right: 30px;
@@ -83,7 +82,7 @@ h1.title {
     font-size: 25px;
     line-height: 25px;
     font-weight: bold;
-    color: rgba(119, 110, 101, 0.9);
+    color: rgba(255, 255, 255, 0.9);
     z-index: 100;
     -webkit-animation: move-up 600ms ease-in;
     -moz-animation: move-up 600ms ease-in;
@@ -102,7 +101,7 @@ p {
   line-height: 1.65; }
 
 a {
-  color: #776e65;
+  color: #dddddd;
   font-weight: bold;
   text-decoration: underline;
   cursor: pointer; }
@@ -149,7 +148,7 @@ hr {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
-  background: #bbada0;
+  background: black;
   border-radius: 6px;
   width: 500px;
   height: 500px;
@@ -163,7 +162,7 @@ hr {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(238, 228, 218, 0.5);
+    background: rgba(0, 0, 0, 0.6);
     z-index: 100;
     text-align: center;
     -webkit-animation: fade-in 800ms ease 1200ms;
@@ -181,7 +180,7 @@ hr {
       margin-top: 59px; }
     .game-container .game-message a {
       display: inline-block;
-      background: #8f7a66;
+      background: #555555;
       border-radius: 3px;
       padding: 0 20px;
       text-decoration: none;
@@ -190,7 +189,7 @@ hr {
       line-height: 42px;
       margin-left: 9px; }
     .game-container .game-message.game-won {
-      background: rgba(237, 194, 46, 0.5);
+      background: rgba(0, 170, 6, 0.75);
       color: #f9f6f2; }
     .game-container .game-message.game-won, .game-container .game-message.game-over {
       display: block; }
@@ -209,8 +208,8 @@ hr {
     clear: both; }
 
 .grid-cell {
-  width: 106.25px;
-  height: 106.25px;
+  width: 106px;
+  height: 106px;
   margin-right: 15px;
   float: left;
   border-radius: 3px;
@@ -223,8 +222,8 @@ hr {
   z-index: 2; }
 
 .tile {
-  width: 106.25px;
-  height: 106.25px;
+  width: 106px;
+  height: 106px;
   line-height: 116.25px; }
   .tile.tile-position-1-1 {
     position: absolute;
@@ -237,11 +236,11 @@ hr {
   .tile.tile-position-1-3 {
     position: absolute;
     left: 0px;
-    top: 243px; }
+    top: 242px; }
   .tile.tile-position-1-4 {
     position: absolute;
     left: 0px;
-    top: 364px; }
+    top: 363px; }
   .tile.tile-position-2-1 {
     position: absolute;
     left: 121px;
@@ -253,113 +252,85 @@ hr {
   .tile.tile-position-2-3 {
     position: absolute;
     left: 121px;
-    top: 243px; }
+    top: 242px; }
   .tile.tile-position-2-4 {
     position: absolute;
     left: 121px;
-    top: 364px; }
+    top: 363px; }
   .tile.tile-position-3-1 {
     position: absolute;
-    left: 243px;
+    left: 242px;
     top: 0px; }
   .tile.tile-position-3-2 {
     position: absolute;
-    left: 243px;
+    left: 242px;
     top: 121px; }
   .tile.tile-position-3-3 {
     position: absolute;
-    left: 243px;
-    top: 243px; }
+    left: 242px;
+    top: 242px; }
   .tile.tile-position-3-4 {
     position: absolute;
-    left: 243px;
-    top: 364px; }
+    left: 242px;
+    top: 363px; }
   .tile.tile-position-4-1 {
     position: absolute;
-    left: 364px;
+    left: 363px;
     top: 0px; }
   .tile.tile-position-4-2 {
     position: absolute;
-    left: 364px;
+    left: 363px;
     top: 121px; }
   .tile.tile-position-4-3 {
     position: absolute;
-    left: 364px;
-    top: 243px; }
+    left: 363px;
+    top: 242px; }
   .tile.tile-position-4-4 {
     position: absolute;
-    left: 364px;
-    top: 364px; }
+    left: 363px;
+    top: 363px; }
 
 .tile {
   border-radius: 3px;
-  background: #eee4da;
+  background: #222222;
   text-align: center;
   font-weight: bold;
   z-index: 10;
-  font-size: 55px;
+  font-size: 45px;
   -webkit-transition: 100ms ease-in-out;
   -moz-transition: 100ms ease-in-out;
   -webkit-transition-property: top, left;
   -moz-transition-property: top, left; }
   .tile.tile-2 {
-    background: #eee4da;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
+    background: #222222; }
   .tile.tile-4 {
-    background: #ede0c8;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
+    background: #363636; }
   .tile.tile-8 {
-    color: #f9f6f2;
-    background: #f2b179; }
+    background: #0f470f; }
   .tile.tile-16 {
-    color: #f9f6f2;
-    background: #f59563; }
+    background: #008B13; color: black; }
   .tile.tile-32 {
-    color: #f9f6f2;
-    background: #f67c5f; }
+    background: #141414; color: #24d514; }
   .tile.tile-64 {
-    color: #f9f6f2;
-    background: #f65e3b; }
+    background: #141414; color: #24d514;
+    box-shadow: 0 0 30px 10px rgba(36, 213, 20, 0.4), inset 0 0 0 1px rgba(255, 255, 255, 0.14286); }
   .tile.tile-128 {
-    color: #f9f6f2;
-    background: #edcf72;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.2381), inset 0 0 0 1px rgba(255, 255, 255, 0.14286);
+    background: black; color: #0f0;
+    box-shadow: 0 0 30px 10px rgba(36, 213, 20, 0.6), inset 0 0 0 1px rgba(255, 255, 255, 0.14286);
     font-size: 45px; }
     @media screen and (max-width: 480px) {
       .tile.tile-128 {
         font-size: 25px; } }
   .tile.tile-256 {
-    color: #f9f6f2;
-    background: #edcc61;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.31746), inset 0 0 0 1px rgba(255, 255, 255, 0.19048);
+    color: #ececec;
+    background: black;
+    text-shadow: 0px 0px 25px white;
+    box-shadow: 0 0 30px 10px rgba(255, 255, 255, 0.8), inset 0 0 0 1px rgba(255, 255, 255, 0.19048);
     font-size: 45px; }
     @media screen and (max-width: 480px) {
       .tile.tile-256 {
         font-size: 25px; } }
-  .tile.tile-512 {
-    color: #f9f6f2;
-    background: #edc850;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.39683), inset 0 0 0 1px rgba(255, 255, 255, 0.2381);
-    font-size: 45px; }
-    @media screen and (max-width: 480px) {
-      .tile.tile-512 {
-        font-size: 25px; } }
-  .tile.tile-1024 {
-    color: #f9f6f2;
-    background: #edc53f;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571);
-    font-size: 35px; }
-    @media screen and (max-width: 480px) {
-      .tile.tile-1024 {
-        font-size: 15px; } }
-  .tile.tile-2048 {
-    color: #f9f6f2;
-    background: #edc22e;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
-    font-size: 35px; }
-    @media screen and (max-width: 480px) {
-      .tile.tile-2048 {
-        font-size: 15px; } }
+
 
 @-webkit-keyframes appear {
   0% {
@@ -484,7 +455,7 @@ hr {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -moz-user-select: none;
-    background: #bbada0;
+    background: black;
     border-radius: 6px;
     width: 280px;
     height: 280px;
@@ -498,7 +469,7 @@ hr {
       right: 0;
       bottom: 0;
       left: 0;
-      background: rgba(238, 228, 218, 0.5);
+      background: rgba(0, 0, 0, 0.6);
       z-index: 100;
       text-align: center;
       -webkit-animation: fade-in 800ms ease 1200ms;
@@ -516,7 +487,7 @@ hr {
         margin-top: 59px; }
       .game-container .game-message a {
         display: inline-block;
-        background: #8f7a66;
+        background: #555555;
         border-radius: 3px;
         padding: 0 20px;
         text-decoration: none;
@@ -525,7 +496,7 @@ hr {
         line-height: 42px;
         margin-left: 9px; }
       .game-container .game-message.game-won {
-        background: rgba(237, 194, 46, 0.5);
+        background: rgba(0, 170, 6, 0.75);
         color: #f9f6f2; }
       .game-container .game-message.game-won, .game-container .game-message.game-over {
         display: block; }
@@ -549,7 +520,7 @@ hr {
     margin-right: 10px;
     float: left;
     border-radius: 3px;
-    background: rgba(238, 228, 218, 0.35); }
+    background: rgba(238, 228, 218, 0.18); }
     .grid-cell:last-child {
       margin-right: 0; }
 
@@ -630,7 +601,7 @@ hr {
     margin-top: 20px; }
 
   .tile {
-    font-size: 35px; }
+    font-size: 25px; }
 
   .game-message p {
     font-size: 30px !important;
