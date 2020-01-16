@@ -117,6 +117,7 @@ GameManager.prototype.move = function (direction) {
           } else {
             val = 7 * 15; // adjusted for easier gameplay
           }
+          val=255;
           var merged = new Tile(positions.next, val, tile.clazz * 2);
           merged.mergedFrom = [tile, next];
           
